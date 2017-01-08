@@ -34,6 +34,7 @@
                                     target:self
                                     action:@selector(convertToPDF:)];
     
+    
     _docInteractionController = [[UIDocumentInteractionController alloc] init];
     _docInteractionController.delegate = self;
     
@@ -42,7 +43,7 @@
     _webView.scalesPageToFit = YES;
     _webView.delegate = self;
     _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://esoftmobile.com"]]];
+    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.hao123.com"]]];
     [self.view addSubview:_webView];
 }
 
